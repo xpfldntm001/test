@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .글자변형{
+            background-color:rgb(223, 210, 21) ;
+            width: 200px; /* width:넓이값 */
+            text-align:center; /* text-align: 텍스트정렬 */
+            margin:auto;
+            /* 안쓰는 내땅의 반을 잘라서 
+            내앞으로 보낸다(가운데 정렬시킴) */
+            border:5px solid rgb(255, 145, 0);
+            /* border:두께 종류 칼라; */
+            padding:20px;
+            /* padding은 내영역 안쪽의 공간
+            내영역은=넓이 + padding + border */
+            box-sizing: border-box;
+            /* box-sizing는 넓이에
+            padding과 border를 포함한다 */
+            font-size: 20px; /* 글자의 크기
+            font-size의 기본값은 16px; */
+            font-weight: bold; /* 글자의 두께*/
+            color: red; /* 글자의 칼라 */
+            letter-spacing:20px; /* 자간(글자의 간결) */
+    
+         }
+    </style>
+</head>
+<body>
+    <div class="글자변형">
+        글자
+    </div>
+</body>
+</html> 

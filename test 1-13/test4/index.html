@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목임</title>
+    <style>
+        /*  * 은모든요소(태그) */ 
+        *{margin: 0;padding: 0;}
+        .영자{color:rgb(89, 0, 255);
+        background-color: rgba(255, 230, 0, 0.849);
+        width:300px; /* 넓이 */
+        margin: auto; /* 자신의 영역이나 쓰지않는 
+        공간을 50%분할해서 앞과뒤에 나누어준다*/ 
+        text-align: center; 
+        padding:20px 20px 20px 78px;
+        /* padding:상 오른쪽 아래 왼쪽;   
+        padding:상 좌우 아래;   
+        padding:상하 좌우;   
+        padding:상하좌우;    */
+        letter-spacing: 60px;
+        border: 5px outset red;
+        box-sizing: border-box;
+        background-image: url(img.jpg);
+        background-size: 130%; 
+        /* cover(배경덮는다)/contain(이미지가 온전히 나옴)
+        cover는 일순위가 넓이에 맞춤,높이가 부족하면 비율을 유지하면 넓이가 늘어나서 높이를 커버합니다. */
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.5s; /* 애니메이션에 시간을 부여 */
+   }
+   .영자:hover{ /* 마우스를 올리면 */
+    background-size: 120%;
+   }
+    </style>
+</head>
+<body>
+ <div class="영자">
+    글자
+ </div>   
+</body>
+</html>
