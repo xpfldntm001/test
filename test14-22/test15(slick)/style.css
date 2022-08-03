@@ -1,0 +1,102 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+img{width: 100%;}
+
+.치매약:after{content:""; display: block;}
+
+
+.영역{width: 60vw; margin: 0 auto;}
+
+
+.영역 .slick{}
+
+.영역 .slick{} .slick-arrow{
+    position: absolute; left: 0; top: 50%;
+font-size: 0; line-height: 0; border: none;
+width: 30px; height: 30px;
+background: none;
+transform: translateY(-50%);
+
+}
+
+
+.영역 .slick{} .slick-prev{
+    z-index: 100; /* z축의 위치이동 */
+    left: 5%;
+}
+
+
+
+
+.영역 .slick{} .slick-prev:before{
+    content: "\f053";
+   font-size: 30px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: gold;
+}
+
+
+.영역 .slick{} .slick-next{
+    right: 5%; 
+    left:auto; /* left의 값을 풀어준다 */}
+
+
+
+
+.영역 .slick{} .slick-next:before{
+    content: "\f054";
+   font-size: 30px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: gold; 
+
+}
+
+
+
+.영역 .slick .slick-dots{
+    /* overflow: hidden; */ /* 부모가깨지는 현상을 막아준다 */
+    position: absolute; 
+    /* position: absolute;로 인해서 속성에 변화가 생김
+    자식의 공간만 차지, 자식이 float이 있어도 깨지지 않음
+    공간을 다시 설정한다 */
+    left: 50%; transform: translateX(-50%);
+    bottom: 10px;
+}
+
+
+.영역 .slick .slick-dots li{
+    float: left; list-style: none;
+    width: 12px; height: 12px;
+    background-color: #dedede;
+    border-radius: 50%; cursor: pointer;
+    margin: 0 5px;
+    transition: 0.3s;
+
+}
+
+
+.영역 .slick .slick-dots li button{
+    font-size: 0; line-height: 0;
+    background: none; border: none;   
+}
+
+
+
+.영역 .slick .slick-dots li.slick-active{
+    background-color: #222;
+    width: 22px; border-radius: 8px; 
+}
+
+
+
+
+
+
+.fontawesome i{color: red; 
+    font-size: 30px;
+
+
+
+}

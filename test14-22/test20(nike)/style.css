@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
+*{
+    margin: 0; padding: 0;
+    font-family: 'Oswald', sans-serif; 
+}
+a{color: #fff; text-decoration: none;}
+
+ul, li{list-style: none;}
+
+
+#wrap{
+    background: url(images/bg-main.jpg)no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+header{position: absolute; z-index: 40;
+display: flex; width: 100%;
+justify-content: space-between;
+align-items: baseline;
+padding: 20px 150px 10px;
+box-sizing: border-box;
+border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+header .header_menu ul{
+    display: flex;
+}
+header .header_menu ul li{margin-right: 40px;}
+header .header_icon i{font-size: 21px; color: #fff;}
+
+
+.slick{ padding-top: 10%; box-sizing: border-box;}
+.slick .slick-slide{position: relative;}
+.slick .left{
+    height: 70vh;
+}
+.slick .left h2{position: absolute;
+left: 74px; top: 0; color: #fff;
+font-size: 230px; letter-spacing: 30px;
+line-height: 272px;
+}
+.slick .left img{ position: absolute;
+    width: 1000px;
+    left: 50px; top: 0;}
+
+
+.slick .right{
+    position: absolute;
+    right: 10%; top: 70px;
+    width: 400px; height: 400px;
+    
+    color: #fff;
+}
+
+.slick .right .nike_star{}
+.slick .right .nike_star em{font-size: 80px;
+font-weight: 700;
+transform: translateX(200px);
+display: inline-block;
+opacity: 0;
+transition: 1.5s;
+}
+.slick .slick-active .right .nike_star em{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.slick .right .nike_star .star{display: inline-block;
+transform: translateX(200px);
+opacity: 0;
+transition: 1.5s 0.5s;
+}
+.slick .slick-active .right .nike_star .star{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+
+.slick .right .nike_star .star i{font-size: 18px;
+color: yellow; margin-left: 10px;}
+.slick .right .nike_star .retro{
+    font-size: 30px; line-height: 35px;
+    transform: translateX(200px); opacity: 0;
+    transition: 1.5s 1s;
+}
+.slick .slick-active .right .nike_star .retro{transform: translateX(0px); opacity: 1;}
+.slick .right .desc{padding-top: 10px;}
+.slick .right .desc ul{}
+.slick .right .desc ul li{}
+.slick .right .desc ul li:nth-child(2){
+    padding-top: 20px;
+}
+.slick .right .btn{padding-top: 20px;}
+.slick .right .btn ul{display: flex;}
+.slick .right .btn ul li{margin-right: 10px;}
+.slick .right .btn select{background: yellow;
+padding: 2px 5px; border: none;
+outline: none;
+
+}
+.slick .right .btn ul li:nth-child(2){
+    border:1px solid #fff;
+    margin-top: -7px;
+}
+.slick .right .btn ul li:nth-child(2) a{
+    display: block;
+    padding: 5px 15px;
+}
+
+
+.slick .slick-arrow{
+    z-index: 40;
+    position: absolute;
+    top:50%; transform: translateY(-50%);
+    font-size: 0;background: none;
+    border: none;
+    
+}
+.slick .slick-prev{
+    left: 2%;
+}
+.slick .slick-prev:before{
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 50px;
+    color: #fff;
+    transition: 0.3s;
+
+}
+.slick .slick-prev:hover:before{
+    color: skyblue;
+}
+.slick .slick-next{
+    right: 2%;
+}
+
+.slick .slick-next::before{
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 50px;
+    color: #fff;
+    transition:0.3s
+}
+.slick .slick-next:hover:before{
+    color: skyblue;
+}
